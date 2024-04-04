@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/blue_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/pdfBisLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/blue_400"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/torrentName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:text="@string/export_form"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_200"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/communesLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/communesTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/hauteur_d_eau" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/longueurLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/longueurTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/coordonn_es" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/altiMaxLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/altiMaxTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/coordonn_es" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/altiMinLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/altiMinTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/coordonn_es" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/affluentLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/affluentTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/niveauAleasLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/niveauAleasTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/historiqueLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/historiqueTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/evenementsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/evenementsTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/date" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pdfBisLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pdfLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pdfBisImg"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/picto_rapport_al_as"
+            android:tint="@color/mainBlue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pdfBisTxt"
+            style="@style/txtForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/mainBlue"
+            android:text="@string/lire_le_fiche"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pdfLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/pdfBisLL"
+        app:layout_constraintEnd_toStartOf="@id/signalementLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pdfImg"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/picto_rapport_al_as"
+            android:tint="@color/mainBlue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pdfTxt"
+            style="@style/txtForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/mainBlue"
+            android:text="@string/lire_le_rapport_d_al_as"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signalementLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/pdfLL"
+        app:layout_constraintEnd_toStartOf="@id/smsLL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/signalementImg"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/goutte"
+            app:tint="@color/mainBlue"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signalementTxt"
+            style="@style/txtForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/mainBlue"
+            android:text="@string/voir_les_signalements"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smsLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/signalementLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/smsImg"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/picto_sonnette"
+            app:tint="@color/mainBlue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/smsTxt"
+            style="@style/txtForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/mainBlue"
+            android:text="@string/s_abonner_aux_signalements"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:src="@drawable/previousonly"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/mainBlue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

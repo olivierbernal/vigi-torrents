@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/dialog_rounded_bg_mainblue"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/expertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/transport_d_l_ments_flottants"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_200"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/transport1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/transportRadio1"
+                    style="@style/radioButtonForm"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transportTxt1"
+                    style="@style/txtForm"
+                    android:text="@string/feuilles_et_v_g_taux" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/transport2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/transportRadio2"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transportTxt2"
+                    style="@style/txtForm"
+                    android:text="@string/branchages" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/transport3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/transportRadio3"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transportTxt3"
+                    style="@style/txtForm"
+                    android:text="@string/branches_et_trons_de_bois" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/transport4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/transportRadio4"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/transportTxt4"
+                    style="@style/txtForm"
+                    android:text="@string/embacle_amas_de_v_g_taux_terre_ou_galets_qui_g_ne_l_coulement_dans_un_canal_vers_une_grille_une_buse_etc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/unChoix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/une_seule_reponse_au_choix"
+                    android:textAlignment="center"
+                    android:textColor="@color/mainBlue" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/okBtn"
+                style="@style/OkBtn"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Je_valide" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        style="@style/Btn"
+        android:text="X"
+        android:drawableTint="@color/blackButtonFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

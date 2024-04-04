@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fr.oworld.vigiTorrent.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/home_to_start_alerting"
+            app:destination="@id/start_alerting" />
+        <action
+            android:id="@+id/home_to_map_all_alerting"
+            app:destination="@id/alertings_map" />
+        <action
+            android:id="@+id/home_to_see_communes"
+            app:destination="@id/list_communes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_communes"
+        android:name="fr.oworld.vigiTorrent.ui.torrents.CommunesFragment"
+        android:label="@string/liste_des_communes"
+        tools:layout="@layout/fragment_communes" >
+        <action
+            android:id="@+id/list_communes_to_list_torrent"
+            app:destination="@id/list_torrents" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_torrents"
+        android:name="fr.oworld.vigiTorrent.ui.torrents.TorrentsFragment"
+        android:label="@string/liste_des_torrents"
+        tools:layout="@layout/fragment_torrents" >
+        <action
+            android:id="@+id/list_torrent_to_fiche_torrent"
+            app:destination="@id/fiche_torrent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fiche_torrent"
+        android:name="fr.oworld.vigiTorrent.ui.torrents.TorrentFragment"
+        android:label="@string/nomTorrent"
+        tools:layout="@layout/fragment_torrent" >
+        <action
+            android:id="@+id/fiche_torrent_to_alertings_map"
+            app:destination="@id/alertings_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alertings_map"
+        android:name="fr.oworld.vigiTorrent.ui.map.AlertingMapFragment"
+        android:label="@string/voir_signalements"
+        tools:layout="@layout/fragment_map_alertings" >
+        <action
+            android:id="@+id/alertings_map_to_see_alerting"
+            app:destination="@id/see_alerting_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/see_alerting_fragment"
+        android:name="fr.oworld.vigiTorrent.ui.expertAlerting.SeeAlertingDialogFragment"
+        android:label="@string/votre_signalement_est_valid"
+        tools:layout="@layout/fragment_see_alerting" />
+
+    <fragment
+        android:id="@+id/start_alerting"
+        android:name="fr.oworld.vigiTorrent.ui.startAlerting.StartAlertingFragment"
+        android:label="@string/signaler"
+        tools:layout="@layout/fragment_alert_photo">
+        <action
+            android:id="@+id/start_alerting_to_quick_alerting"
+            app:destination="@id/quick_alerting" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quick_alerting"
+        android:name="fr.oworld.vigiTorrent.ui.quickAlerting.QuickAlertingFragment"
+        android:label="@string/signaler"
+        tools:layout="@layout/fragment_quick_alerting">
+        <action
+            android:id="@+id/quick_alerting_to_expert_alerting"
+            app:destination="@id/expert_alerting" />
+        <action
+            android:id="@+id/quick_alerting_to_end_alerting"
+            app:destination="@id/end_alerting" />
+        <action
+            android:id="@+id/quick_alerting_to_map"
+            app:destination="@id/map_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="fr.oworld.vigiTorrent.ui.map.MapFragment"
+        android:label="Carte"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/expert_alerting"
+        android:name="fr.oworld.vigiTorrent.ui.expertAlerting.ExpertAlertingDialogFragment"
+        android:label="@string/signaler"
+        tools:layout="@layout/fragment_expert_alerting">
+    </fragment>
+
+    <fragment
+        android:id="@+id/end_alerting"
+        android:name="fr.oworld.vigiTorrent.ui.quickAlerting.EndAlertingFragment"
+        android:label="@string/votre_signalement_est_valid"
+        tools:layout="@layout/fragment_end_alerting" >
+        <action
+            android:id="@+id/end_alerting_to_alertings_map"
+            app:destination="@id/alertings_map" />
+        <action
+            android:id="@+id/end_alerting_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

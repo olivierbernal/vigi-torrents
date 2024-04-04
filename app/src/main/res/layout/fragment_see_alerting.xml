@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/dialog_rounded_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageTorrent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainBlue"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/torrentColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goutte"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/torrentName"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="@string/export_form"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_200"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/eventTypeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/eventTypeTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/hauteur_d_eau" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pointLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/pointTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/coordonn_es" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hourLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/hourTxt"
+                    style="@style/txtForm"
+                    android:layout_height="@dimen/formTxtExport"
+                    android:text="@string/date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/tick"
+                        android:rotation="90"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/commentTitleTxt"
+                        style="@style/txtForm"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/commentaire" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/commentTxt"
+                    style="@style/txtForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/transport_d_l_ments_flottants" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/waterHeightLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/waterHeightTxt"
+                        style="@style/txtForm"
+                        android:layout_height="@dimen/formTxtExport"
+                        android:text="@string/hauteur_d_eau" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/speedLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/speedTxt"
+                        style="@style/txtForm"
+                        android:layout_height="@dimen/formTxtExport"
+                        android:text="@string/vitesse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/floatingLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/floatingTxt"
+                        style="@style/txtForm"
+                        android:layout_height="@dimen/formTxtExport"
+                        android:text="@string/transport_d_l_ments_flottants" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clarityLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/clarityTxt"
+                        style="@style/txtForm"
+                        android:layout_height="@dimen/formTxtExport"
+                        android:text="@string/clart_de_l_eau"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitBtn"
+        style="@style/Btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:drawableTint="@color/blackButtonFont"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

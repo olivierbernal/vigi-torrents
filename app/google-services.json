@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464267193561",
+    "project_id": "vigitorrent-9d59f",
+    "storage_bucket": "vigitorrent-9d59f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464267193561:android:07b3b3f9f8ebd71fdea2c8",
+        "android_client_info": {
+          "package_name": "fr.oworld.vigiTorrent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASjdgJRB0I6nNYL0wfiPlVh7xFtuOvYdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

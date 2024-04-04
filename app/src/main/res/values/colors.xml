@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBlue">#00396D</color>
+    <color name="blue_400">#33D6FA</color>
+    <color name="blue_200">#A1ECFC</color>
+
+    <color name="red">#F40043</color>
+    <color name="orange">#FF793D</color>
+
+    <color name="grayButtonBg">#F2F2F2</color>
+    <color name="blackButtonFont">#333333</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="hint_color">#44000000</color>
+</resources>

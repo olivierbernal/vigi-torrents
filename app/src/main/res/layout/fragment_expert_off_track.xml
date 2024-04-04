@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/dialog_rounded_bg_mainblue"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/expertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/hors_cours_d_eau_habituel"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_200"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/offTrack1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/offTrackRadio1"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offTrackTxt1"
+                    style="@style/txtForm"
+                    android:text="@string/sur_un_sentier" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/offTrack2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/offTrackRadio2"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offTrackTxt2"
+                    style="@style/txtForm"
+                    android:text="@string/sur_un_chemin" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/offTrack3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/offTrackRadio3"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offTrackTxt3"
+                    style="@style/txtForm"
+                    android:text="@string/sur_un_talus" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/offTrack4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/offTrackRadio4"
+                    style="@style/radioButtonForm"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offTrackTxt4"
+                    style="@style/txtForm"
+                    android:text="@string/dans_un_champs" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/offTrack5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <RadioButton
+                    android:id="@+id/offTrackRadio5"
+                    style="@style/radioButtonForm"
+                    android:visibility="invisible"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offTrackTxt5"
+                    style="@style/txtForm"
+                    android:text="@string/autres" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/unChoix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/une_seule_reponse_au_choix"
+                    android:textAlignment="center"
+                    android:textColor="@color/mainBlue" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/okBtn"
+                style="@style/OkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:text="@string/Je_valide" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        style="@style/Btn"
+        android:text="X"
+        android:drawableTint="@color/blackButtonFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

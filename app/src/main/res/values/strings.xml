@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">VigiTorrents</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="signaler">Signaler</string>
+    <string name="voir_torrents">Voir les torrents</string>
+    <string name="recevoir_alertes">Recevoir des alertes</string>
+    <string name="voir_signalements">Voir tous les signalements</string>
+    <string name="choisir_un_m_dia_dans_la_galerie">Choisir un média dans la galerie</string>
+    <string name="prendre_une_photo">Prendre une photo</string>
+    <string name="je_precise_la_geoloc">Je précise \nla géolocalisation</string>
+    <string name="je_precise_heure">Je précise \nl\'heure</string>
+    <string name="jajoute_commentaire">J\'ajoute \nun commentaire</string>
+    <string name="jindique_torrent">J\'indique \nle nom du torrent</string>
+    <string name="je_select_media">Je sélectionne \nle média</string>
+    <string name="alert_event_title">Evénement</string>
+    <string name="alert_event_type1">dans le cours d\'eau</string>
+    <string name="alert_event_type2">hors du cours d\'eau</string>
+    <string name="export_form">Usage expert: Formulaire complémentaire</string>
+    <string name="Je_valide">Je valide</string>
+    <string name="hauteur_d_eau">Hauteur d\'eau</string>
+    <string name="vitesse">Vitesse</string>
+    <string name="transport_d_l_ments_flottants">Transport d’éléments flottants</string>
+    <string name="clart_de_l_eau">Clarté de l\’eau</string>
+    <string name="hauteur_importante_inhabituelle">Hauteur importante inhabituelle</string>
+    <string name="hauteur_proche_des_bords">hauteur proche des bords</string>
+    <string name="d_borde_et_s_coule_hors_de_son_lit">Déborde et s\'écoule hors de son lit</string>
+    <string name="une_seule_reponse_au_choix">une seule reponse au choix</string>
+    <string name="rosion_visible_des_berges">érosion visible des berges</string>
+    <string name="envahie_toute_la_largeur_du_lit_mineur">envahie toute la largeur du lit mineur</string>
+    <string name="tendance_visible_hausse">tendance visible à hausse</string>
+    <string name="tendance_visible_baisse">tendance visible à baisse</string>
+    <string name="plusieurs_r_ponses_au_choix">Plusieurs réponses au choix</string>
+    <string name="plus_de_2_m_tres_par_seconde">plus de 2 métres par seconde</string>
+    <string name="moins_de_2_m_tres_par_seconde">moins de 2 métres par seconde</string>
+    <string name="tips_je_rep_re_une_distance_de_2m_je_jette_une_brindille_et_je_compte_jusqu_deux">TIPS - Je repère une distance de 2m, je jette une brindille et je compte jusqu’à deux.</string>
+    <string name="feuilles_et_v_g_taux">feuilles et végétaux</string>
+    <string name="branchages">branchages</string>
+    <string name="embacle_amas_de_v_g_taux_terre_ou_galets_qui_g_ne_l_coulement_dans_un_canal_vers_une_grille_une_buse_etc">embacle : amas de végétaux, terre ou galets qui gène l’écoulement dans un canal, vers une grille, une buse, etc.</string>
+    <string name="branches_et_trons_de_bois">branches et trons de bois</string>
+    <string name="clair_on_voit_le_fond_du_cours_d_eau">clair : on voit le fond du cours d’eau</string>
+    <string name="turbide_on_voit_quelques_centim_tre_sous_la_surface">turbide : on voit quelques centimètre sous la surface</string>
+    <string name="opaque">opaque</string>
+    <string name="tips_je_prends_des_rep_res_sur_le_bord_du_cours_d_eau_sur_un_rocher_ou_une_branche_qui_s_enfonce_dans_l_eau">TIPS - Je prends des repères sur le bord du cours d’eau, sur un rocher ou une branche qui s’enfonce dans l’eau</string>
+    <string name="hors_cours_d_eau_habituel">Hors cours d\'eau habituel</string>
+    <string name="sur_un_sentier">sur un sentier</string>
+    <string name="sur_un_chemin">sur un chemin</string>
+    <string name="sur_un_talus">sur un talus</string>
+    <string name="dans_un_champs">dans un champs</string>
+    <string name="autres">Autres</string>
+    <string name="votre_signalement_est_valid">Votre signalement est validé</string>
+    <string name="voir_d_autres_signalements_alentours">Voir d’autres signalements alentours</string>
+
+    <string name="user_location_permission_explanation">VigiTorrent souhaite vous localiser afin d\'afficher une carte pour localiser les torrents.</string>
+    <string name="user_location_permission_not_granted">Nous ne pourrons pas vous localiser.</string>
+
+    /* no GPS */
+    <string name="error_gps_disabled">GPS Désactivé</string> --
+    <string name="error_gps_disabled_details">Veuillez activer votre GPS afin que nous puissions vous localiser sur la carte et relancer la carte.</string> --
+    <string name="active_gps">Activer la localisation</string>
+
+
+    <string name="success_sub">Vous etes bien enregistré aux alertes.</string>
+    <string name="erreur_server">Erreur lors de la connexion au serveur.</string>
+    <string name="commentaire">Commentaire</string>
+    <string name="coordonn_es">Coordonnées</string>
+    <string name="date">Date</string>
+
+    <string name="erreur_localisation">Veuillez indiquer la localisation de la photo avant de valider</string>
+    <string name="erreur_commentaire">Veuillez indiquer un commentaire avant de valider</string>
+    <string name="erreur_evenement">Veuillez indiquer le type d\'événement avant de valider</string>
+    <string name="nomTorrent">Nom du torrent</string>
+    <string name="numeroTel">Téléphone (au format 336... ou 337...)</string>
+
+    <string name="From_library">Depuis la bibliothèque</string>
+    <string name="take_picture">Prendre une photo</string>
+    <string name="cancel">Annuler</string>
+    <string name="signalez_les_v_nements_torrentiels_lors_de_fortes_pluies_pour_informer_et_alerter_les_habitants_et_usagers_vuln_rables">Signalez les événements torrentiels lors de fortes pluies pour informer et alerter les habitants et usagers vulnérables.</string>
+    <string name="claix">Claix</string>
+    <string name="Echirolles">Echirolles</string>
+    <string name="pont_de_claix">Pont de Claix</string>
+    <string name="seyssinet">Seyssinet</string>
+    <string name="varces_alli_res">Varces Allières</string>
+    <string name="liste_des_communes">Par communes</string>
+    <string name="liste_des_torrents">Liste des torrents</string>
+    <string name="lire_le_rapport_d_al_as">Lire le \nrapport d’aléas</string>
+    <string name="lire_le_fiche">Lire la\nfiche détaillée"</string>
+    <string name="voir_les_signalements">Voir les \nsignalements</string>
+    <string name="s_abonner_aux_signalements">S’abonner aux\nsignalements</string>
+
+</resources>
